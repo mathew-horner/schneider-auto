@@ -1,0 +1,190 @@
+:root {
+    --green: #038749;
+
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: var(--font-weight-normal);
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: var(--font-weight-semibold);
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 65px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.button,
+button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: var(--font-weight-semibold);
+}
+
+a.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-primary {
+    background-color: var(--green);
+    color: white;
+}
+
+.button-secondary {
+    border: solid 1px var(--green);
+    background-color: white;
+    color: var(--green);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.background-off-color {
+    background-color: #EFEFEF;
+}
+
+.background-dark {
+    background-color: black;
+    color: white;
+}
+
+.text-off-color {
+    color: #656565;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.mt-lg {
+    margin-top: 32px;
+}
+
+.pad-md {
+    padding: 16px;
+}
+
+.pad-xl {
+    padding: 64px;
+}
+
+.gap-md {
+    gap: 16px;
+}
+
+.gap-lg {
+    gap: 32px;
+}
+
+.gap-xl {
+    gap: 64px;
+}
+
+.mw-text-md {
+    max-width: 800px;
+}
+
+.round {
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 128px;
+}
+
+#navbar {
+    padding-right: 64px;
+}
+
+#navbar > img {
+    height: 300px;
+    width: 300px;
+}
+
+#hero {
+    position: relative;
+    color: white;
+}
+
+#services-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#review-on-google {
+    padding: 8px 64px;
+}
+
+#review-on-google > img {
+    width: 230px;
+}
+
+#reviews {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
