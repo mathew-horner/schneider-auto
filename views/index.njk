@@ -1,11 +1,9 @@
 ---
 layout: base.njk
 ---
-<section id="hero">
-    <img class="full-width" src="assets/img/hero-background.jpg" />
-    <div class="overlay" />
+<section class="flex-col gap-md" id="hero">
     <div class="flex-row items-center justify-between" id="navbar">
-        <img src="assets/img/logo.png" />
+        <img class="logo-small" src="assets/img/logo.png" />
         <nav class="flex-row items-center gap-lg">
             <a href="/tires">TIRES</a>
             <a href="/about">ABOUT US</a>
@@ -13,27 +11,29 @@ layout: base.njk
         </nav>
     </div>
     <div class="flex-row justify-center">
-        <div class="flex-col items-center text-center gap-md mw-text-md">
+        <div class="flex-col items-center text-center gap-md bound-text">
             <h1>AUTOMOTIVE REPAIRS AND MAINTENANCE</h1>
             <p>At Schneider Automotive Services, we provide honest, expert automotive repair and maintenance to keep your vehicle running smoothly. Located in Smithville, MO, we proudly serve local drivers with everything from routine oil changes to diagnostics and full-service repairs—done right the first time.</p>
             <a class="mt-lg button button-primary" href="/contact">CONTACT US</a>
-        <div>
+        </div>
     </div>
+    <div class="overlay" />
 </section>
 <main>
-    <section class="flex-row">
-        <div class="flex-col gap-md">
+    <section class="flex-row justify-between gap-lg items-start">
+        <div class="flex-col gap-md bound-text">
             <h2>WELCOME TO SCHNEIDER AUTOMOTIVE SERVICES!</h2>
             <p>Conveniently located off US-169 Highway—in the same building as Dave’s Auto Body & Hot Rod Shop—Matthew Schneider offers top-quality auto services with a personal touch. Whether you need routine vehicle maintenance, brake repairs, or help with a major issue, we’re committed to keeping your vehicle on the road, running smooth and safe.</p>
-            <div class="mt-lg">
+            <div class="flex-row flex-wrap gap-md mt-lg">
                 <a class="button button-primary" href="/contact">BOOK YOUR APPOINTMENT TODAY</a>
                 <a class="button button-secondary" href="/about">LEARN MORE ABOUT US</a>
             </div>
         </div>
-        <img src="assets/img/logo.png" />
+        <img class="logo-big" src="assets/img/logo.png" />
     </section>
+    <div class="divider"></div>
     <section class="flex-col items-center gap-xl">
-        <div class="flex-col text-center gap-md mw-text-md">
+        <div class="flex-col text-center gap-md bound-text">
             <h2>OUR SERVICES</h2>
             <p>Our skilled, certified mechanic handles a full range of automotive services for all makes and models. Whether it’s routine maintenance or complex repairs, we’ve got the tools, training, and experience to get the job done right.</p>
         </div>
@@ -72,10 +72,13 @@ layout: base.njk
             </div>
         </div>
     </section>
-    <section class="flex-col items-center text-center gap-md background-dark pad-xl round">
-        <h2>TIRES FOR EVERY VEHICLE PASSENGER, MEDIUM & HEAVY DUTY</h2>
-        <p>Looking for the right tires in Smithville, MO? We carry a full selection of passenger, medium duty, and heavy duty tires from trusted brands like Michelin, Goodyear, Firestone, and more. Whether you're outfitting a work truck, replacing tires on your family SUV, or managing a commercial fleet, we’ve got the tires and expertise to match.</p>
-        <a class="mt-lg button button-primary" href="/tires">BROWSE TIRE OPTIONS</a>
+    <section class="round" id="tires-for">
+        <div class="flex-col items-center text-center gap-md pad-xl">
+            <h2>TIRES FOR EVERY VEHICLE PASSENGER, MEDIUM & HEAVY DUTY</h2>
+            <p class="bound-text">Looking for the right tires in Smithville, MO? We carry a full selection of passenger, medium duty, and heavy duty tires from trusted brands like Michelin, Goodyear, Firestone, and more. Whether you're outfitting a work truck, replacing tires on your family SUV, or managing a commercial fleet, we’ve got the tires and expertise to match.</p>
+            <a class="mt-lg button button-primary" href="/tires">BROWSE TIRE OPTIONS</a>
+        </div>
+        <div class="overlay"></div>
     </section>
     <section class="flex-col gap-xl items-center">
         <h2>WHAT OUR CUSTOMERS SAY</h2>
@@ -86,33 +89,38 @@ layout: base.njk
         </div>
         <div class="gap-lg full-width" id="reviews">
             <article class="flex-col gap-md items-center text-center background-off-color pad-md">
-                <p>He did amazing job replacing my turbo in my Chevy classic durmax</p>
-                <!-- TODO: Google review link -->
-                <a class="text-off-color" href="#">Read More</a>
-                <p>Yougian NEVER LET GO</p>
-                <p class="text-off-color">1 month ago</p>
+                <img src="assets/img/5stars.svg" />
+                <p>I can’t say enough good things about this shop. I came in today with an unexpected issue, and even though they didn’t have to help me, they went above and beyond.</p>
+                <a class="text-off-color" href="https://share.google/gV5UYiGCxOyhSHlwM">Read More</a>
+                <p>Anthony Wichman</p>
             </article>
             <article class="flex-col gap-md items-center text-center background-off-color pad-md">
-                <p>He did amazing job replacing my turbo in my Chevy classic durmax</p>
-                <!-- TODO: Google review link -->
-                <a class="text-off-color" href="#">Read More</a>
+                <img src="assets/img/5stars.svg" />
+                <p>He did an amazing job replacing my turbo in my Chevy classic durmax very cool guy would recommend everyone coming to him! Good prices and he likes to work with people</p>
+                <a class="text-off-color" href="https://share.google/IshKEzH7zdup6kIdL">Read More</a>
                 <p>Yougian NEVER LET GO</p>
-                <p class="text-off-color">1 month ago</p>
             </article>
             <article class="flex-col gap-md items-center text-center background-off-color pad-md">
-                <p>He did amazing job replacing my turbo in my Chevy classic durmax</p>
-                <!-- TODO: Google review link -->
-                <a class="text-off-color" href="#">Read More</a>
-                <p>Yougian NEVER LET GO</p>
-                <p class="text-off-color">1 month ago</p>
+                <img src="assets/img/5stars.svg" />
+                <p>My experience at Schneider Automotive Service was great! Scheduled to get spark plugs and coils change. Pricing is great and work was done well. Matt did a great job.</p>
+                <a class="text-off-color" href="https://share.google/pB3CP4GlbAtK6FFfB">Read More</a>
+                <p>justin mansfield</p>
             </article>
             <article class="flex-col gap-md items-center text-center background-off-color pad-md">
-                <p>He did amazing job replacing my turbo in my Chevy classic durmax</p>
-                <!-- TODO: Google review link -->
-                <a class="text-off-color" href="#">Read More</a>
-                <p>Yougian NEVER LET GO</p>
-                <p class="text-off-color">1 month ago</p>
+                <img src="assets/img/5stars.svg" />
+                <p>This is the best car repair experience I've ever had in 40+ years of car ownership. Matt is extremely honest, telling me exactly what is needed, and more importantly, what is not needed.</p>
+                <a class="text-off-color" href="https://share.google/IT0O8zFreZ34TD24X">Read More</a>
+                <p>Randy Beale</p>
             </article>
         </div>
+    </section>
+    <div class="divider"></div>
+    <section class="flex-row gap-lg justify-between">
+        <div class="flex-col items-start gap-md bound-text">
+            <h2>GET BACK ON THE ROAD WITH CONFIDENCE</h2>
+            <p>Ready to get your vehicle running like new? Contact Schneider Automotive Services today for reliable, expert repairs and maintenance that you can count on!</p>
+            <a class="button button-primary mt-lg" href="/contact">CONTACT US</a>
+        </div>
+        <img id="shop-image" src="assets/img/shop.png" />
     </section>
 </main>

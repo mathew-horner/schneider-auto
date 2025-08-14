@@ -67,15 +67,6 @@ a.button {
     color: var(--green);
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.75);
-}
-
 .background-off-color {
     background-color: #EFEFEF;
 }
@@ -89,6 +80,16 @@ a.button {
     color: #656565;
 }
 
+.background-dark .text-off-color {
+    color: #F7F7F7;
+}
+
+.divider {
+    height: 1px;
+    width: 650px;
+    background-color: var(--green);
+}
+
 .flex-row {
     display: flex;
 }
@@ -98,8 +99,16 @@ a.button {
     flex-direction: column;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .items-center {
     align-items: center;
+}
+
+.items-start {
+    align-items: start;
 }
 
 .justify-between {
@@ -116,6 +125,10 @@ a.button {
 
 .full-width {
     width: 100%;
+}
+
+.half-width {
+    width: 50%;
 }
 
 .mt-lg {
@@ -142,38 +155,93 @@ a.button {
     gap: 64px;
 }
 
-.mw-text-md {
+.round {
+    border-radius: 5px;
+}
+
+.bound-text {
     max-width: 800px;
 }
 
-.round {
-    border-radius: 5px;
+.logo-big {
+    width: 400px;
+    height: 400px;
+}
+
+.logo-small {
+    width: 150px;
+    height: 150px;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 80px;
-    padding: 128px;
+    padding: 80px 100px;
+}
+
+main > section {
+    width: 100%;
 }
 
 #navbar {
     padding-right: 64px;
 }
 
-#navbar > img {
-    height: 300px;
-    width: 300px;
-}
-
 #hero {
+    background-image: url("../img/hero-background.jpg");
+    background-size: cover;
     position: relative;
     color: white;
+    padding-top: 24px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 80px;
 }
+
+#hero > div {
+    position: relative;
+    z-index: 1;
+}
+
+#hero > .overlay {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
 
 #services-table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+#tires-for {
+    background-image: url("../img/rolling-tire.jpg");
+    background-size: cover;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+#tires-for > div {
+    position: relative;
+    z-index: 1;
+}
+
+#tires-for > .overlay {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 #review-on-google {
@@ -187,4 +255,25 @@ main {
 #reviews {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+}
+
+#reviews > article > p {
+    flex-grow: 1;
+}
+
+#shop-image {
+    width: 500px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-column-header {
+    font-size: 20px;
+    border-bottom: solid 1px var(--green);
+    padding-bottom: 8px;
+    width: 128px;
 }

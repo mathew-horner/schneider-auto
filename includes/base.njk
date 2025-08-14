@@ -9,5 +9,38 @@
     </head>
     <body>
         {{ content | safe }}
+        <footer class="background-dark pad-xl">
+            <div class="flex-col gap-md items-center">
+                <img class="logo-small" src="assets/img/logo.png" />
+                <div class="flex-row gap-md justify-center">
+                    <a href="#">
+                        <img src="assets/img/facebook.svg" />
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/instagram.svg" />
+                    </a>
+                </div>
+                <a class="text-off-color" href="/privacy">Privacy Policy</a>
+            </div>
+            <div class="flex-col gap-lg items-start">
+                <p class="footer-column-header">CONTACT</p>
+                <p class="text-off-color">(816) 746-8669</p>
+                <p class="text-off-color">General:<br/>schneiderautoservices@gmail.com</p>
+                <p class="text-off-color">Commercial Tires:<br/>Sales@schneiderautoservices.com</p>
+                <p class="text-off-color">513 US 169 HWY STE A<br/>Smithville, MO 64089</p>
+            </div>
+            <div class="flex-col gap-lg items-start">
+                <p class="footer-column-header">HOURS</p>
+                <p class="text-off-color">Monday - Saturday: 9AM - 5PM</p>
+                <p class="text-off-color">Sunday: Closed</p>
+            </div>
+            <div class="flex-col gap-lg items-start">
+                <p class="footer-column-header">QUICK LINKS</p>
+                <a class="text-off-color" href="/">HOME</a>
+                <a class="text-off-color" href="/tires">TIRES</a>
+                <a class="text-off-color" href="/about">ABOUT US</a>
+                <a class="text-off-color" href="/contact">CONTACT</a>
+            </div>
+        </footer>
     </body>
 </html>
