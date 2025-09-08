@@ -1,0 +1,64 @@
+---
+layout: base.njk
+---
+<section class="flex-col gap-md" id="hero">
+    {% include "navbar.njk" %}
+    <div class="flex-row justify-center">
+        <div class="flex-col items-center text-center gap-md bound-text">
+            <h1>ABOUT US</h1>
+            <p>At Schneider Automotive Services, we believe car care should be straightforward, honest, and dependable. We’re a locally owned shop committed to keeping your vehicle in top shape while treating you with the respect you deserve.</p>
+            <a class="mt-lg button button-primary" href="/contact">CONTACT US</a>
+        </div>
+    </div>
+    <div class="overlay" />
+</section>
+<main>
+    <section id="meet-the-team" class="flex-col gap-xl items-center">
+        <h2>MEET THE TEAM</h2>
+        <div class="flex-row gap-xl">
+            <img src="/assets/img/matt.jpg" />
+            <div class="flex-col gap-md">
+                <h2>MATTHEW SCHNEIDER</h2>
+                <h3 class="text-green">OWNER, LEAD MECHANIC</h3>
+                <p>With over 15 years of experience, Matthew Schneider is the driving force behind Schneider Automotive Services. After working in corporate repair shops, he grew disillusioned with an industry that often prioritized profits over people. Determined to do better, he started his own shop to offer honest, high-quality service in a place where both customers and employees are genuinely valued.<br/><br/>Matthew is known for going the extra mile—whether it’s helping a customer in a bind or creating a positive, respectful workplace. His commitment to transparency, fairness, and integrity defines everything we do. When you come to Schneider Automotive, you’re not just a customer—you’re family.</p>
+            </div>
+        </div>
+        <div class="flex-row gap-xl">
+            <div class="flex-col gap-md">
+                <h2>JAMES TAYLOR</h2>
+                <h3 class="text-green">HEAD OF SALES</h3>
+                <p>With years of experience in relationship-driven sales, James is known for his ability to connect with customers and deliver solutions that truly fit their needs. He takes pride in making the process straightforward, low-pressure, and genuinely helpful.<br/><br/>James has a sharp eye for detail, a talent for problem-solving, and a strong commitment to service. As a longtime friend of founder Matthew Schneider, he shares the same core values of honesty, transparency, and putting people first. Whether you're here for parts, advice, or support, James is someone you can count on.</p>
+            </div>
+            <img src="/assets/img/matt.jpg" />
+        </div>
+    </section>
+    <section class="flex-col items-center background-gradient gap-xl pad-xl">
+        <h2>WHAT WE STAND FOR</h2>
+        <div id="values-grid">
+            <div>
+                <h3>HONESTY</h3>
+                <p>Clear communication and upfront pricing.</p>
+            </div>
+            <div>
+                <h3>RESPECT</h3>
+                <p>For your time, your money, and your vehicle.</p>
+            </div>
+            <div>
+                <h3>QUALITY</h3>
+                <p>Skilled workmanship and attention to detail.</p>
+            </div>
+            <div>
+                <h3>COMMUNITY</h3>
+                <p>We're proud to serve and support our local area.</p>
+            </div>
+        </div>
+    </section>
+    <section class="flex-row gap-lg justify-between">
+        <div class="flex-col items-start gap-md bound-text">
+            <h2>GET BACK ON THE ROAD WITH CONFIDENCE</h2>
+            <p>Ready to get your vehicle running like new? Contact Schneider Automotive Services today for reliable, expert repairs and maintenance that you can count on!</p>
+            <a class="button button-primary mt-lg" href="/contact">CONTACT US</a>
+        </div>
+        <img id="shop-image" src="/assets/img/shop.png" />
+    </section>
+</main>

@@ -76,6 +76,15 @@ a.button {
     color: white;
 }
 
+.background-gradient {
+    background: linear-gradient(180deg, #038749 0%, #02552E 30.22%, #01301A 68.69%, #012112 100%);
+    color: white;
+}
+
+.text-green {
+    color: var(--green);
+}
+
 .text-off-color {
     color: #656565;
 }
@@ -270,6 +279,23 @@ main > section {
 
 #shop-image {
     width: 500px;
+}
+
+#meet-the-team > h2 {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+    border-bottom: solid 1px var(--green);
+}
+
+#meet-the-team img {
+    height: 439px;
+}
+
+#values-grid {
+    display: grid;
+    gap: 64px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 #contact-iframe {
