@@ -194,10 +194,16 @@ main > section {
     background-size: cover;
     position: relative;
     color: white;
+}
+
+#hero {
+    padding-bottom: 80px;
+}
+
+#hero, #navbar-wrapper {
     padding-top: 24px;
     padding-left: 120px;
     padding-right: 120px;
-    padding-bottom: 80px;
 }
 
 #hero > div {
@@ -264,6 +270,12 @@ main > section {
 
 #shop-image {
     width: 500px;
+}
+
+#contact-iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
 }
 
 footer {
