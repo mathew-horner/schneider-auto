@@ -198,29 +198,36 @@ main > section {
     padding-right: 64px;
 }
 
-#hero {
+#home-hero {
     background-image: url("../img/hero-background.jpg");
+}
+
+#about-hero {
+    background-image: url("../img/about-hero.jpg");
+}
+
+.hero {
     background-size: cover;
     position: relative;
     color: white;
 }
 
-#hero {
+.hero {
     padding-bottom: 80px;
 }
 
-#hero, #navbar-wrapper {
+.hero, #navbar-wrapper {
     padding-top: 24px;
     padding-left: 120px;
     padding-right: 120px;
 }
 
-#hero > div {
+.hero > div {
     position: relative;
     z-index: 1;
 }
 
-#hero > .overlay {
+.hero > .overlay {
     position: absolute;
     z-index: 0;
     top: 0;
