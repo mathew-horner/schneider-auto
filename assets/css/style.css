@@ -43,6 +43,12 @@ a {
     text-decoration: none;
 }
 
+/*
+=====================
+ Utility Classes
+=====================
+*/
+
 .button,
 button {
     padding: 12px 20px;
@@ -173,11 +179,6 @@ a.button {
     max-width: 800px;
 }
 
-.logo-big {
-    width: 400px;
-    height: 400px;
-}
-
 .logo-small {
     width: 150px;
     height: 150px;
@@ -212,7 +213,7 @@ main > section {
     padding-right: 64px;
 }
 
-@media screen and (width < 768px) {
+@media screen and (width < 1000px) {
     #navbar-mobile {
         display: flex;
     }
@@ -222,7 +223,7 @@ main > section {
     }
 }
 
-@media screen and (width >= 768px) {
+@media screen and (width >= 1000px) {
     #navbar-mobile {
         display: none;
     }
@@ -236,6 +237,12 @@ main > section {
     background: transparent;
     border: none;
 }
+
+/*
+===========
+ Heroes 
+===========
+*/
 
 #home-hero {
     background-image: url("../img/hero-background.jpg");
@@ -255,7 +262,7 @@ main > section {
     color: white;
 }
 
-@media screen and (width < 768px) {
+@media screen and (width < 1000px) {
     .hero, #navbar-wrapper {
         padding: 32px;
     }
@@ -265,7 +272,7 @@ main > section {
     }
 }
 
-@media screen and (width >= 768px) {
+@media screen and (width >= 1000px) {
     .hero {
         padding-bottom: 80px;
     }
@@ -292,11 +299,71 @@ main > section {
     background: rgba(0, 0, 0, 0.75);
 }
 
+/*
+==============
+ Home Page
+==============
+*/
+
+/* Welcome */
+
+#welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 32px;
+}
+
+#welcome > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 800px;
+}
+
+#welcome > img {
+    height: 400px;
+    width: 400px;
+}
+
+#welcome-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+@media (width < 1000px) {
+    #welcome > div {
+        align-items: center;
+        text-align: center;
+    }
+
+    #welcome > img {
+        display: none;
+    }
+
+    #welcome-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Our Services */
 
 #services-table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+@media (width < 1000px) {
+    #services-table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tires for Every Vehicle */
 
 #tires-for {
     background-image: url("../img/rolling-tire.jpg");
@@ -321,6 +388,8 @@ main > section {
     background: rgba(0, 0, 0, 0.6);
 }
 
+/* What Our Customers Say */
+
 #review-on-google {
     padding: 8px 64px;
 }
@@ -339,9 +408,17 @@ main > section {
     flex-grow: 1;
 }
 
+/* Get Back on the Road */
+
 #shop-image {
     width: 500px;
 }
+
+/*
+=================
+ About Us Page
+=================
+*/
 
 #meet-the-team > h2, #brands-we-work-with > h2 {
     padding-left: 100px;
@@ -411,7 +488,7 @@ main > section {
 }
 
 /* Mobile Footer */
-@media screen and (width < 768px) {
+@media screen and (width < 1000px) {
     footer {
         display: flex;
         flex-direction: column;
@@ -429,7 +506,7 @@ main > section {
 }
 
 /* Tablet and Larger Footer */
-@media screen and (width >= 768px) {
+@media screen and (width >= 1000px) {
     footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -440,4 +517,3 @@ main > section {
         align-items: start;
     }
 }
-
