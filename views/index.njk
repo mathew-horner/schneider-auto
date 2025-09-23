@@ -74,8 +74,8 @@ layout: base.njk
         <div class="overlay"></div>
     </section>
     <section class="flex-col gap-xl items-center">
-        <h2>WHAT OUR CUSTOMERS SAY</h2>
-        <div id="review-on-google" class="flex-row justify-between items-center background-off-color full-width">
+        <h2 class="text-center">WHAT OUR CUSTOMERS SAY</h2>
+        <div id="review-on-google" class="background-off-color">
             <img src="/assets/img/google.png" />
             <!-- TODO: Google review link -->
             <a class="button button-primary" href="#">REVIEW US ON GOOGLE</a>
@@ -108,7 +108,13 @@ layout: base.njk
         </div>
     </section>
     <div class="divider"></div>
-    <section class="flex-row gap-lg justify-between">
+    <section class="only-mobile flex-col gap-lg items-center text-center">
+        <h2>GET BACK ON THE ROAD WITH CONFIDENCE</h2>
+        <img id="shop-image" src="/assets/img/shop.png" />
+        <p>Ready to get your vehicle running like new? Contact Schneider Automotive Services today for reliable, expert repairs and maintenance that you can count on!</p>
+        <a class="button button-primary" href="/contact">CONTACT US</a>
+    </section>
+    <section class="only-desktop flex-row gap-lg justify-between">
         <div class="flex-col items-start gap-md bound-text">
             <h2>GET BACK ON THE ROAD WITH CONFIDENCE</h2>
             <p>Ready to get your vehicle running like new? Contact Schneider Automotive Services today for reliable, expert repairs and maintenance that you can count on!</p>

@@ -186,6 +186,18 @@ a.button {
     height: 150px;
 }
 
+@media (width < 1000px) {
+    .only-desktop {
+        display: none;
+    }
+}
+
+@media (width >= 1000px) {
+    .only-mobile {
+        display: none;
+    }
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -271,25 +283,25 @@ main > section {
     color: white;
 }
 
-@media screen and (width < 1000px) {
-    .hero, #navbar-wrapper {
-        padding: 32px;
-    }
-
-    #navbar-wrapper {
-        padding-bottom: 0;
-    }
+.hero, #navbar-wrapper {
+    padding: 32px 80px;
 }
 
-@media screen and (width >= 1000px) {
-    .hero {
-        padding-bottom: 80px;
+.hero {
+    padding-bottom: 112px;
+}
+
+#navbar-wrapper {
+    padding-bottom: 0;
+}
+
+@media screen and (width < 1000px) {
+    .hero, #navbar-wrapper {
+        padding: 16px 32px;
     }
 
-    .hero, #navbar-wrapper {
-        padding-top: 24px;
-        padding-left: 120px;
-        padding-right: 120px;
+    .hero {
+        padding-bottom: 48px;
     }
 }
 
@@ -400,6 +412,11 @@ main > section {
 /* What Our Customers Say */
 
 #review-on-google {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     padding: 8px 64px;
 }
 
@@ -416,6 +433,28 @@ main > section {
 #reviews > article > p {
     flex-grow: 1;
 }
+
+@media (width < 1000px) {
+    #review-on-google {
+        flex-direction: column;
+        padding: 32px;
+    }
+
+    #reviews {
+        display: flex;
+        justify-content: center;
+    }
+
+    #reviews > article {
+        display: none;
+    }
+
+    #reviews > article:first-child {
+        display: flex;
+        width: 300px;
+    }
+}
+
 
 /* Get Back on the Road */
 
