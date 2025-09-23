@@ -48,6 +48,7 @@ button {
     padding: 12px 20px;
     border-radius: 5px;
     font-weight: var(--font-weight-semibold);
+    cursor: pointer;
 }
 
 a.button {
@@ -194,8 +195,46 @@ main > section {
     width: 100%;
 }
 
-#navbar {
+/*
+=============
+ Navbar
+=============
+*/
+
+#navbar-mobile {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar-desktop {
+    align-items: center;
+    justify-content: space-between;
     padding-right: 64px;
+}
+
+@media screen and (width < 768px) {
+    #navbar-mobile {
+        display: flex;
+    }
+
+    #navbar-desktop {
+        display: none;
+    }
+}
+
+@media screen and (width >= 768px) {
+    #navbar-mobile {
+        display: none;
+    }
+
+    #navbar-desktop {
+        display: flex;
+    }
+}
+
+#hamburger {
+    background: transparent;
+    border: none;
 }
 
 #home-hero {
