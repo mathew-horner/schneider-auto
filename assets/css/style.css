@@ -197,12 +197,20 @@ a.button {
     margin-top: var(--d-space-xl);
 }
 
+.pad-sm {
+    padding: var(--d-space-sm);
+}
+
 .pad-md {
-    padding: 16px;
+    padding: var(--d-space-md);
+}
+
+.pad-lg {
+    padding: var(--d-space-lg);
 }
 
 .pad-xl {
-    padding: 64px;
+    padding: var(--d-space-xl);
 }
 
 .gap-sm {
@@ -236,6 +244,22 @@ a.button {
 
     .mt-xl {
         margin-top: var(--m-space-xl);
+    }
+
+    .pad-sm {
+        padding: var(--m-space-sm);
+    }
+
+    .pad-md {
+        padding: var(--m-space-md);
+    }
+
+    .pad-lg {
+        padding: var(--m-space-lg);
+    }
+
+    .pad-xl {
+        padding: var(--m-space-xl);
     }
 
     .gap-sm {
