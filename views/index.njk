@@ -4,7 +4,7 @@ layout: base.njk
 <section class="flex-col gap-md hero" id="home-hero">
     {% include "navbar.njk" %}
     <div class="flex-row justify-center">
-        <div class="flex-col items-center text-center gap-md bound-text">
+        <div class="flex-col items-center text-center gap-lg bound-text">
             <h1>AUTOMOTIVE REPAIRS AND MAINTENANCE</h1>
             <p>At Schneider Automotive Services, we provide honest, expert automotive repair and maintenance to keep your vehicle running smoothly. Located in Smithville, MO, we proudly serve local drivers with everything from routine oil changes to diagnostics and full-service repairs—done right the first time.</p>
             <a class="mt-lg button button-primary" href="/contact">CONTACT US</a>
@@ -13,11 +13,11 @@ layout: base.njk
     <div class="overlay" />
 </section>
 <main>
-    <section id="welcome">
-        <div>
+    <section id="welcome" class="flex-row justify-between items-start gap-lg">
+        <div class="flex-col gap-lg bound-text">
             <h2>WELCOME TO SCHNEIDER AUTOMOTIVE SERVICES!</h2>
             <p>Conveniently located off US-169 Highway—in the same building as Dave’s Auto Body & Hot Rod Shop—Matthew Schneider offers top-quality auto services with a personal touch. Whether you need routine vehicle maintenance, brake repairs, or help with a major issue, we’re committed to keeping your vehicle on the road, running smooth and safe.</p>
-            <div id="welcome-buttons">
+            <div id="welcome-buttons" class="gap-sm mt-lg">
                 <a class="button button-primary" href="/contact">BOOK YOUR APPOINTMENT TODAY</a>
                 <a class="button button-secondary" href="/about">LEARN MORE ABOUT US</a>
             </div>
@@ -66,16 +66,16 @@ layout: base.njk
         </div>
     </section>
     <section class="round" id="tires-for">
-        <div class="flex-col items-center text-center gap-md pad-xl">
+        <div class="flex-col items-center text-center gap-lg pad-xl">
             <h2>TIRES FOR EVERY VEHICLE PASSENGER, MEDIUM & HEAVY DUTY</h2>
             <p class="bound-text">Looking for the right tires in Smithville, MO? We carry a full selection of passenger, medium duty, and heavy duty tires from trusted brands like Michelin, Goodyear, Firestone, and more. Whether you're outfitting a work truck, replacing tires on your family SUV, or managing a commercial fleet, we’ve got the tires and expertise to match.</p>
             <a class="mt-lg button button-primary" href="/tires">BROWSE TIRE OPTIONS</a>
         </div>
         <div class="overlay"></div>
     </section>
-    <section class="flex-col gap-xl items-center">
+    <section class="flex-col gap-lg items-center">
         <h2 class="text-center">WHAT OUR CUSTOMERS SAY</h2>
-        <div id="review-on-google" class="background-off-color">
+        <div id="review-on-google" class="background-off-color mt-lg">
             <img src="/assets/img/google.png" />
             <!-- TODO: Google review link -->
             <a class="button button-primary" href="#">REVIEW US ON GOOGLE</a>

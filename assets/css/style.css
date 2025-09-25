@@ -3,6 +3,15 @@
 
     --font-weight-normal: 400;
     --font-weight-semibold: 600;
+
+    --d-space-sm: 8px;
+    --d-space-md: 16px;
+    --d-space-lg: 32px;
+    --d-space-xl: 64px;
+    --m-space-sm: 4px;
+    --m-space-md: 8px;
+    --m-space-lg: 16px;
+    --m-space-xl: 32px;
 }
 
 * {
@@ -172,8 +181,20 @@ a.button {
     width: 50%;
 }
 
+.mt-sm {
+    margin-top: var(--d-space-sm);
+}
+
+.mt-md {
+    margin-top: var(--d-space-md);
+}
+
 .mt-lg {
-    margin-top: 32px;
+    margin-top: var(--d-space-lg);
+}
+
+.mt-xl {
+    margin-top: var(--d-space-xl);
 }
 
 .pad-md {
@@ -184,16 +205,54 @@ a.button {
     padding: 64px;
 }
 
+.gap-sm {
+    gap: var(--d-space-sm);
+}
+
 .gap-md {
-    gap: 16px;
+    gap: var(--d-space-md);
 }
 
 .gap-lg {
-    gap: 32px;
+    gap: var(--d-space-lg);
 }
 
 .gap-xl {
-    gap: 64px;
+    gap: var(--d-space-xl);
+}
+
+@media (width < 1000px) {
+    .mt-sm {
+        margin-top: var(--m-space-sm);
+    }
+
+    .mt-md {
+        margin-top: var(--m-space-md);
+    }
+
+    .mt-lg {
+        margin-top: var(--m-space-lg);
+    }
+
+    .mt-xl {
+        margin-top: var(--m-space-xl);
+    }
+
+    .gap-sm {
+        gap: var(--m-space-sm);
+    }
+
+    .gap-md {
+        gap: var(--m-space-md);
+    }
+
+    .gap-lg {
+        gap: var(--m-space-lg);
+    }
+
+    .gap-xl {
+        gap: var(--m-space-xl);
+    }
 }
 
 .round {
@@ -232,13 +291,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 64px;
+    gap: var(--d-space-xl);
     padding: 64px;
 }
 
-@media (width < 750px) {
+@media (width < 1000px) {
     main {
-        gap: 32px;
+        gap: var(--m-space-xl);
         padding: 32px;
     }
 }
@@ -362,20 +421,6 @@ main > section {
 
 /* Welcome */
 
-#welcome {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    gap: 32px;
-}
-
-#welcome > div {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 800px;
-}
-
 #welcome > img {
     height: 400px;
     width: 400px;
@@ -384,12 +429,10 @@ main > section {
 #welcome-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 32px;
 }
 
 @media (width < 1000px) {
-    #welcome > div {
+    #welcome > div:first-child {
         align-items: center;
         text-align: center;
     }
