@@ -37,15 +37,29 @@ h6 {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 4em;
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 h3 {
     font-size: 2em;
+}
+
+@media (width < 1000px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
 }
 
 a {
@@ -290,6 +304,10 @@ main > section {
     background-size: cover;
     position: relative;
     color: white;
+}
+
+.hero > * {
+    max-width: 100%;
 }
 
 .hero, #navbar-wrapper {
