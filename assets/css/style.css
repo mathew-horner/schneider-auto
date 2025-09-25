@@ -191,8 +191,8 @@ a.button {
 }
 
 .logo-small {
-    width: 150px;
-    height: 150px;
+    width: 9.5em;
+    height: 9.5em;
 }
 
 @media (width < 1000px) {
