@@ -589,15 +589,35 @@ main > section {
     height: 439px;
 }
 
+@media (width < 1000px) {
+    #meet-the-team > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #meet-the-team > div:last-child {
+        flex-direction: column-reverse;
+    }
+
+    #meet-the-team h2, #meet-the-team h3 {
+        text-align: center;
+    }
+}
+
 #values-grid {
     display: grid;
     gap: 64px;
     grid-template-columns: repeat(2, 1fr);
 }
 
+/*
+==============
+ Tires Page
+==============
+*/
+
 #brands-grid {
     display: grid;
-    /*grid-auto-flow: row;*/
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 100%;
 }
