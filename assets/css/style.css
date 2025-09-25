@@ -477,6 +477,10 @@ main > section {
     grid-template-columns: repeat(3, 1fr);
 }
 
+#services-table h3 {
+    word-wrap: break-word;
+}
+
 @media (width < 1000px) {
     #services-table {
         display: flex;
