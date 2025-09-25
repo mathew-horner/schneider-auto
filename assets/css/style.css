@@ -240,7 +240,7 @@ main > section {
 #navbar-desktop {
     align-items: center;
     justify-content: space-between;
-    padding-right: 64px;
+    padding-right: 32px;
 }
 
 @media screen and (width < 1000px) {
@@ -293,7 +293,7 @@ main > section {
 }
 
 .hero, #navbar-wrapper {
-    padding: 32px 80px;
+    padding: 32px;
 }
 
 .hero {
@@ -306,7 +306,7 @@ main > section {
 
 @media screen and (width < 1000px) {
     .hero, #navbar-wrapper {
-        padding: 16px 32px;
+        padding: 16px;
     }
 
     .hero {
