@@ -40,6 +40,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Common Font Sizes */
 
 html {
@@ -566,7 +570,6 @@ main > section {
 
 #shop-image {
     width: 500px;
-    max-width: 100%;
 }
 
 /*
@@ -617,6 +620,18 @@ main > section {
 
 #tire-classes img {
     width: 525px;
+}
+
+@media (width < 1000px) {
+    #tire-classes > .divider {
+        display: none;
+    }
+
+    #tire-classes > div:first-child, #tire-classes > div:last-child {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 #contact-iframe {
