@@ -629,12 +629,6 @@ main > section {
 ===========
 */
 
-.footer-column {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
 .footer-column-header {
     font-size: 1.25em;
     border-bottom: solid 1px var(--green);
@@ -647,7 +641,7 @@ main > section {
     footer {
         display: flex;
         flex-direction: column;
-        gap: 64px;
+        gap: var(--m-space-xl);
         align-items: center;
     }
 
@@ -665,7 +659,7 @@ main > section {
     footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 16px;
+        gap: var(--d-space-md);
     }
 
     .footer-column {
