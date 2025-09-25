@@ -461,6 +461,7 @@ main > section {
     #reviews > article:first-child {
         display: flex;
         width: 300px;
+        max-width: 100%;
     }
 }
 
@@ -469,6 +470,7 @@ main > section {
 
 #shop-image {
     width: 500px;
+    max-width: 100%;
 }
 
 /*
