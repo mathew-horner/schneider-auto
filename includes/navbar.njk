@@ -1,8 +1,13 @@
 <div id="navbar-mobile">
-    <a href="/"><img class="logo-small" src="/assets/img/logo.png" /></a>
+    <a href="/"><img id="navbar-logo" class="logo-small" src="/assets/img/logo.png" /></a>
     <button id="hamburger" onclick="hamburgerClick()">
         <img id="hamburger-icon" src="/assets/img/hamburger-{{ variant }}.svg" />
     </button>
+    <nav id="navbar-mobile-dropdown">
+        <a class="not-button" href="/tires">TIRES</a>
+        <a class="not-button" href="/about">ABOUT</a>
+        <a class="button button-primary" href="/contact">CONTACT US</a>
+    </nav>
     <script>
         function hamburgerClick() {
             const navbar = document.getElementById("navbar-mobile");
@@ -10,7 +15,7 @@
             const expanded = navbar.classList.toggle("expanded");
 
             if (expanded) {
-                hamburgerIcon.src = "/assets/img/hamburger-close-{{ variant }}.svg";
+                hamburgerIcon.src = "/assets/img/hamburger-close-dark.svg";
             } else {
                 hamburgerIcon.src = "/assets/img/hamburger-{{ variant }}.svg";
             }

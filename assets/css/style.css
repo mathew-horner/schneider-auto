@@ -336,9 +336,40 @@ main > section {
 =============
 */
 
+#navbar-logo {
+    position: relative;
+    z-index: 1;
+}
+
 #navbar-mobile {
+    position: relative;
+    z-index: 2;
     align-items: center;
     justify-content: space-between;
+}
+
+#navbar-mobile-dropdown {
+    background-color: white;
+    position: fixed;
+    padding: 16px;
+    padding-top: 140px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    color: var(--green);
+}
+
+#navbar-mobile-dropdown > .not-button {
+    font-size: 20px;
+    font-weight: var(--font-weight-semibold);
+}
+
+.expanded > #navbar-mobile-dropdown {
+    display: flex;
 }
 
 #navbar-desktop {
@@ -368,6 +399,8 @@ main > section {
 }
 
 #hamburger {
+    position: relative;
+    z-index: 1;
     background: transparent;
     border: none;
 }
