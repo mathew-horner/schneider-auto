@@ -80,6 +80,10 @@ h3 {
     }
 }
 
+p {
+    line-height: 150%;
+}
+
 /*
 =====================
  Utility Classes
