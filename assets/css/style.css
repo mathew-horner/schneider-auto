@@ -635,6 +635,10 @@ main > section {
     #meet-the-team h2, #meet-the-team h3 {
         text-align: center;
     }
+
+    #meet-the-team .contact {
+        justify-content: center;
+    }
 }
 
 #values-grid {
