@@ -173,6 +173,10 @@ a.button {
     justify-content: center;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
 .text-center {
     text-align: center;
 }
@@ -340,11 +344,6 @@ main > section {
 =============
 */
 
-#navbar-logo {
-    position: relative;
-    z-index: 1;
-}
-
 #navbar-mobile {
     position: relative;
     z-index: 2;
@@ -356,7 +355,6 @@ main > section {
     background-color: white;
     position: fixed;
     padding: 16px;
-    padding-top: 140px;
     top: 0;
     left: 0;
     width: 100vw;
@@ -403,8 +401,6 @@ main > section {
 }
 
 #hamburger {
-    position: relative;
-    z-index: 1;
     background: transparent;
     border: none;
 }
