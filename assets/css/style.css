@@ -618,6 +618,14 @@ main > section {
     border-bottom: solid 1px var(--green);
 }
 
+@media (width < 1000px) {
+    #meet-the-team > h2, #brands-we-work-with > h2 {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 16px;
+    }
+}
+
 #meet-the-team img {
     max-height: 450px;
 }
