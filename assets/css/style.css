@@ -327,13 +327,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--d-space-xl);
+    gap: 100px;
     padding: 64px;
 }
 
 @media (width < 1000px) {
     main {
-        gap: var(--m-space-xl);
+        gap: 64px;
         padding: 32px;
     }
 }
