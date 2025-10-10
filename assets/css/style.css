@@ -451,7 +451,7 @@ main > section {
 
 @media screen and (width < 1000px) {
     .hero, #navbar-wrapper {
-        padding: 16px;
+        padding: 32px;
     }
 
     .hero {
