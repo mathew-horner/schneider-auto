@@ -1,0 +1,17 @@
+@import "../styles/global.css";
+
+.button-primary {
+    @apply font-semibold px-5 py-3 rounded-sm bg-green text-white;
+}
+
+.button-secondary {
+    @apply font-semibold px-5 py-3 rounded-sm bg-white text-green border border-green;
+}
+
+.light-foreground .button-bare {
+    @apply text-white;
+}
+
+.dark-foreground .button-bare {
+    @apply text-black;
+}

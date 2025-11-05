@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --color-green: #038749;
+    --font-sans: "Roboto", sans-serif;
+}
+
+html {
+    @apply font-sans;
+}
