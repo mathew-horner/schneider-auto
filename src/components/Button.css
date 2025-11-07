@@ -1,4 +1,4 @@
-@import "../styles/global.css";
+@import "~/styles/global.css";
 
 .button-primary {
     @apply font-semibold px-5 py-3 rounded-sm bg-green text-white;
