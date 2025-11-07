@@ -1,5 +1,6 @@
+import type { FC } from "react";
 import "./Overlay.css";
 
-const Overlay = () => <div className="overlay"></div>;
+const Overlay: FC = () => <div className="overlay"></div>;
 
 export default Overlay;

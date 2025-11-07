@@ -1,33 +1,18 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
-import Button from "../components/Button";
-import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
 
 import hero from "~/assets/hero.jpg";
-import Overlay from "../components/Overlay";
 ---
 
 <PageLayout>
-	<section
-		class="flex flex-col items-center p-8 pb-32 gap-8 text-white bg-cover relative"
-		style={{ "background-image": `url(${hero.src})` }}
-	>
-		<Navbar />
-		<div
-			class="flex flex-col max-w-3xl gap-8 items-center text-center z-10 relative"
-		>
-			<h1 class="font-bold text-6xl">
-				AUTOMOTIVE REPAIRS<br />AND MAINTENANCE
-			</h1>
-			<p class="mb-8">
-				At Schneider Automotive Services, we provide honest, expert
-				automotive repair and maintenance to keep your vehicle running
-				smoothly. Located in Smithville, MO, we proudly serve local
-				drivers with everything from routine oil changes to diagnostics
-				and full-service repairs—done right the first time.
-			</p>
-			<Button url="/contact" text="Contact Us" />
-		</div>
-		<Overlay />
-	</section>
+	<Hero
+		backgroundImage={hero.src}
+		header="Automotive Repairs and Maintenance"
+		paragraph="At Schneider Automotive Services, we provide honest, expert \
+			automotive repair and maintenance to keep your vehicle running \
+			smoothly. Located in Smithville, MO, we proudly serve local drivers \
+			with everything from routine oil changes to diagnostics and \
+			full-service repairs—done right the first time."
+	/>
 </PageLayout>
