@@ -1,0 +1,17 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import Hero from "../components/Hero";
+
+import hero from "~/assets/heroes/about.jpg";
+---
+
+<PageLayout>
+    <Hero
+        backgroundImage={hero.src}
+        header="About Us"
+        paragraph="At Schneider Automotive Services, we believe car care should \
+            be straightforward, honest, and dependable. We’re a locally owned \
+            shop committed to keeping your vehicle in top shape while treating \
+            you with the respect you deserve."
+    />
+</PageLayout>

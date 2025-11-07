@@ -20,7 +20,7 @@ const Hero: FC<PropsWithChildren<Props>> = (props: PropsWithChildren<Props>) => 
             <div
                 className="flex flex-col max-w-3xl gap-8 items-center text-center z-10 relative"
             >
-                <h1 className="font-bold text-6xl max-w-2xl">
+                <h1 className="font-bold text-6xl">
                     {header}
                 </h1>
                 <p className="mb-8">

@@ -1,0 +1,19 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import Hero from "../components/Hero";
+
+import hero from "~/assets/heroes/tires.jpg";
+---
+
+<PageLayout>
+    <Hero
+        backgroundImage={hero.src}
+        header="Tires for Every Vehicle"
+        paragraph="At Schneider Automotive Services, we specialize in matching \
+            the right tires to your vehicle—whether it’s your daily driver or \
+            part of your commercial fleet. We proudly serve drivers and \
+            businesses in Smithville and the greater Kansas City area with \
+            quality brands, expert service, and a commitment to getting you \
+            back on the road safely."
+    />
+</PageLayout>
