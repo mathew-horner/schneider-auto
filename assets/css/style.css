@@ -320,6 +320,10 @@ a.button {
     height: 150px;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 @media (width < 1000px) {
     .logo-small {
         width: 80px;
