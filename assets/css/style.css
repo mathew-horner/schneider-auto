@@ -84,7 +84,7 @@ p {
     line-height: 150%;
 }
 
-main > * {
+main>* {
     max-width: 1450px;
 }
 
@@ -145,11 +145,19 @@ a.button {
     color: #F7F7F7;
 }
 
-.divider {
+.divider,
+.divider-sm {
     height: 1px;
-    width: 650px;
     max-width: 80%;
     background-color: var(--green);
+}
+
+.divider {
+    width: 650px;
+}
+
+.divider-sm {
+    width: 400px;
 }
 
 .flex-row {
@@ -207,6 +215,10 @@ a.button {
 
 .mt-xl {
     margin-top: var(--d-space-xl);
+}
+
+.mb-xl {
+    margin-bottom: var(--d-space-xl);
 }
 
 .pad-sm {
@@ -321,7 +333,7 @@ a.button {
     }
 }
 
-@media (width >= 1000px) {
+@media (width >=1000px) {
     .only-mobile {
         display: none;
     }
@@ -342,7 +354,7 @@ main {
     }
 }
 
-main > section {
+main>section {
     width: 100%;
 }
 
@@ -373,12 +385,12 @@ main > section {
     color: var(--green);
 }
 
-#navbar-mobile-dropdown > .not-button {
+#navbar-mobile-dropdown>.not-button {
     font-size: 20px;
     font-weight: var(--font-weight-semibold);
 }
 
-.expanded > #navbar-mobile-dropdown {
+.expanded>#navbar-mobile-dropdown {
     display: flex;
 }
 
@@ -398,7 +410,7 @@ main > section {
     }
 }
 
-@media screen and (width >= 1000px) {
+@media screen and (width >=1000px) {
     #navbar-mobile {
         display: none;
     }
@@ -437,11 +449,12 @@ main > section {
     color: white;
 }
 
-.hero > * {
+.hero>* {
     max-width: 100%;
 }
 
-.hero, #navbar-wrapper {
+.hero,
+#navbar-wrapper {
     padding: 32px;
 }
 
@@ -454,7 +467,9 @@ main > section {
 }
 
 @media screen and (width < 1000px) {
-    .hero, #navbar-wrapper {
+
+    .hero,
+    #navbar-wrapper {
         padding: 32px;
     }
 
@@ -463,12 +478,12 @@ main > section {
     }
 }
 
-.hero > div {
+.hero>div {
     position: relative;
     z-index: 1;
 }
 
-.hero > .overlay {
+.hero>.overlay {
     position: absolute;
     z-index: 0;
     top: 0;
@@ -490,7 +505,7 @@ main > section {
 
 /* Welcome */
 
-#welcome > img {
+#welcome>img {
     height: 400px;
     width: 400px;
 }
@@ -502,12 +517,12 @@ main > section {
 }
 
 @media (width < 1000px) {
-    #welcome > div:first-child {
+    #welcome>div:first-child {
         align-items: center;
         text-align: center;
     }
 
-    #welcome > img {
+    #welcome>img {
         display: none;
     }
 
@@ -545,12 +560,12 @@ main > section {
     overflow: hidden;
 }
 
-#tires-for > div {
+#tires-for>div {
     position: relative;
     z-index: 1;
 }
 
-#tires-for > .overlay {
+#tires-for>.overlay {
     position: absolute;
     z-index: 0;
     top: 0;
@@ -571,7 +586,7 @@ main > section {
     padding: 8px 64px;
 }
 
-#review-on-google > img {
+#review-on-google>img {
     width: 230px;
 }
 
@@ -581,7 +596,7 @@ main > section {
     align-items: stretch;
 }
 
-#reviews > article > p {
+#reviews>article>p {
     flex-grow: 1;
 }
 
@@ -596,11 +611,11 @@ main > section {
         justify-content: center;
     }
 
-    #reviews > article {
+    #reviews>article {
         display: none;
     }
 
-    #reviews > article:first-child {
+    #reviews>article:first-child {
         display: flex;
         width: 300px;
         max-width: 100%;
@@ -620,7 +635,8 @@ main > section {
 =================
 */
 
-#meet-the-team > h2, #brands-we-work-with > h2 {
+#meet-the-team>h2,
+#brands-we-work-with>h2 {
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 32px;
@@ -628,7 +644,9 @@ main > section {
 }
 
 @media (width < 1000px) {
-    #meet-the-team > h2, #brands-we-work-with > h2 {
+
+    #meet-the-team>h2,
+    #brands-we-work-with>h2 {
         padding-left: 32px;
         padding-right: 32px;
         padding-bottom: 16px;
@@ -640,16 +658,17 @@ main > section {
 }
 
 @media (width < 1000px) {
-    #meet-the-team > div {
+    #meet-the-team>div {
         flex-direction: column;
         align-items: center;
     }
 
-    #meet-the-team > div:last-child {
+    #meet-the-team>div:last-child {
         flex-direction: column-reverse;
     }
 
-    #meet-the-team h2, #meet-the-team h3 {
+    #meet-the-team h2,
+    #meet-the-team h3 {
         text-align: center;
     }
 
@@ -680,7 +699,7 @@ main > section {
     gap: 32px;
 }
 
-@media (width >= 1000px) {
+@media (width >=1000px) {
     #brands-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -695,7 +714,7 @@ main > section {
     }
 }
 
-#brands-grid > div {
+#brands-grid>div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -707,7 +726,7 @@ main > section {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-#brands-grid > div > img {
+#brands-grid>div>img {
     width: 100%;
 }
 
@@ -716,11 +735,12 @@ main > section {
 }
 
 @media (width < 1000px) {
-    #tire-classes > .divider {
+    #tire-classes>.divider {
         display: none;
     }
 
-    #tire-classes > div:first-child, #tire-classes > div:last-child {
+    #tire-classes>div:first-child,
+    #tire-classes>div:last-child {
         text-align: center;
         flex-direction: column;
         align-items: center;
@@ -765,7 +785,7 @@ main > section {
 }
 
 /* Tablet and Larger Footer */
-@media screen and (width >= 1000px) {
+@media screen and (width >=1000px) {
     footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);

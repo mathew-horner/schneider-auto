@@ -1,0 +1,64 @@
+---
+layout: base.njk
+---
+<section class="flex-col gap-lg hero" id="tires-hero">
+    {% set variant = "light" %}
+    {% include "navbar.njk" %}
+    <div class="flex-row justify-center">
+        <div class="flex-col items-center text-center gap-md bound-text mb-xl">
+            <h1>OUR SERVICES</h1>
+        </div>
+    </div>
+    <div class="overlay" />
+</section>
+<main>
+    <section class="flex-col items-center gap-xl">
+        <div class="text-center bound-text flex-col items-center gap-md">
+            <h2>THE SERVICES WE PROVIDE</h2>
+            <div class="divider-sm"></div>
+            <p>
+                Keeping your car in great shape shouldn't be stressful. Our team is here to provide honest advice,
+                dependable service, and quality repairs you can trust. Whether you need an oil change, brake service, or
+                major repairs, we're committed to making your experience simple, transparent, and worry-free.
+            </p>
+        </div>
+        <div class="gap-xl" id="services-table">
+            <div class="flex-row items-center gap-md">
+                <img src="/assets/img/engine-repair.svg" />
+                <h3>ENGINE REPAIR</h3>
+            </div>
+            <div class="flex-row items-center gap-md">
+                <img src="/assets/img/brake-repair.svg" />
+                <h3>BRAKE REPAIR</h3>
+            </div>
+            <div class="flex-row items-center gap-md">
+                <img src="/assets/img/suspension-repair.svg" />
+                <h3>SUSPENSION REPAIR</h3>
+            </div>
+            <div class="flex-row items-center gap-md">
+                <img src="/assets/img/oil-changes.svg" />
+                <h3>OIL CHANGES</h3>
+            </div>
+            <div class="flex-row items-center gap-md">
+                <img src="/assets/img/ac-repair.svg" />
+                <h3>A/C REPAIR</h3>
+            </div>
+            <div class="flex-row items-center gap-md">
+                <img src="/assets/img/tire-repair.svg" />
+                <h3>TIRE REPAIR</h3>
+            </div>
+            <div class="flex-row items-center gap-md">
+                <img src="/assets/img/preventative-maintenance.svg" />
+                <h3>PREVENTATIVE MAINTENANCE</h3>
+            </div>
+            <div class="flex-row items-center gap-md">
+                <img src="/assets/img/electrical-diagnosis.svg" />
+                <h3>ELECTRICAL DIAGNOSIS & REPAIR</h3>
+            </div>
+        </div>
+    </section>
+    <section class="flex-col items-center text-center background-gradient gap-lg pad-xl round">
+        <h2>BOOK YOUR NEXT<br />SERVICE TODAY</h2>
+        <a class="button button-secondary" href="/contact">CONTACT US</a>
+    </section>
+</main>
